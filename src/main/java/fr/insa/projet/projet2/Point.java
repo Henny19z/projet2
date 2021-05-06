@@ -9,13 +9,12 @@ package fr.insa.projet.projet2;
  *
  * @author henny
  */
-public class NoeudSimple extends Noeud {
-   
+public class Point {
+    
     private double px;
     private double py;
-           
-    public NoeudSimple (double px, double py,int idNoeud) {
-        super(idNoeud);
+
+    public Point(double px, double py) {
         this.px = px;
         this.py = py;
     }
@@ -35,6 +34,5 @@ public class NoeudSimple extends Noeud {
     public void setPy(double py) {
         this.py = py;
     }
-    
     
 }
