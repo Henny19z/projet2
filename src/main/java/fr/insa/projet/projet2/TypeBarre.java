@@ -9,7 +9,7 @@ package fr.insa.projet.projet2;
  *
  * @author henny
  */
-public class TypeBarre extends CatalogueBarre {
+public class TypeBarre  {
     
     private int idTypeBarre;
     private double cout;
