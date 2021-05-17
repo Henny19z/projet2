@@ -18,7 +18,7 @@ public class Segment {
         this.debut = debut;
         this.fin = fin;
     }
-
+        
     public Point getDebut() {
         return debut;
     }
@@ -35,6 +35,21 @@ public class Segment {
         this.fin = fin;
     }
     
-    
+    /**
+     *
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "[" + this.debut + "," + this.fin + ']';
+    }
+
+     public static Segment demandeSegment() {
+        System.out.println("point début : ");
+        Point deb = Point.demandePoint();
+        System.out.println("point fin : ");
+        Point fin = Point.demandePoint();
+        return new Segment(deb, fin);
+    }
     
 }

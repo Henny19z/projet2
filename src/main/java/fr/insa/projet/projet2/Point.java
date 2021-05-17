@@ -18,7 +18,7 @@ public class Point {
         this.px = px;
         this.py = py;
     }
-
+        
     public double getPx() {
         return px;
     }
@@ -35,4 +35,12 @@ public class Point {
         this.py = py;
     }
     
+    public static Point demandePoint() {
+        System.out.println("abscisse : ");
+        double px = Lire.d();
+        System.out.println("ordonnée : ");
+        double py = Lire.d();
+        return new Point(px, py);
+    }
+     
 }

@@ -15,17 +15,26 @@ public class TriangleTerrain {
     private Point p1;
     private Point p2;
     private Point p3;
+    private Segment s1;
+    private Segment s2;
+    private Segment s3;
     
     public TriangleTerrain (int identificateur, Point p1, Point p2, Point p3) {
         this.identificateur = identificateur;
         this.p1 = p1;
         this.p2 = p2;
         this.p3 = p3;
-        
+        this.s1 = new Segment(p1,p2);
+        this.s1 = new Segment(p2,p3);
+        this.s1 = new Segment(p3,p1);
     }
     
     public int getIdentificateur() {
         return identificateur;
+    }
+    
+    public void setIdentificateur(int identificateur) {
+        this.identificateur = identificateur;
     }
 
     public Point getP1() {
@@ -38,10 +47,6 @@ public class TriangleTerrain {
 
     public Point getP3() {
         return p3;
-    }
-
-    public void setIdentificateur(int identificateur) {
-        this.identificateur = identificateur;
     }
 
     public void setP1(Point p1) {
