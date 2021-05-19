@@ -7,7 +7,7 @@ package fr.insa.projet.projet2;
 
 /**
  *
- * @author henny
+ * @author henny modif fdb
  */
 public class Noeud {
     
